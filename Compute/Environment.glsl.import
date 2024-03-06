@@ -1,0 +1,14 @@
+[remap]
+
+importer="glsl"
+type="RDShaderFile"
+uid="uid://tseq8dohpso"
+path="res://.godot/imported/Environment.glsl-8cb7722e0b87d7da27a3bda2e3c44ffb.res"
+
+[deps]
+
+source_file="res://Compute/Environment.glsl"
+dest_files=["res://.godot/imported/Environment.glsl-8cb7722e0b87d7da27a3bda2e3c44ffb.res"]
+
+[params]
+
