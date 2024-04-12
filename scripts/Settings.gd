@@ -9,11 +9,13 @@ class_name SlimeSettings extends Resource
 @export_group("Agents behavior")
 @export var move_speed := 10.0
 @export var turn_speed := 15.0
+## A radius of 1 is a 3x3 square, a value of 2 is a 5x5 square, etc.
 @export var sensor_radius := 1
 @export var sensor_distance := 10.0
 @export var sensor_angle_radians := 1.0472
 @export var trail_weight := 1.0
 @export_group("Environment")
+## A radius of 1 is a 3x3 square, a value of 2 is a 5x5 square, etc.
 @export_range(1, 10) var diffusion_radius := 1
 @export var diffusion_force := 3.0
 @export var evaporation := 0.8

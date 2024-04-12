@@ -1,5 +1,6 @@
 extends TextureRect
-
+## [b]Flag the simulation to update params buffers.[/b][br]
+## Set this [color=cyan]true[/color] to update [i]Agents behavior[/i] or [i]Environment[/i] parameters.
 @export var update_flag := false
 @export var settings : SlimeSettings
 

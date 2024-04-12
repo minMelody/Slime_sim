@@ -9,10 +9,10 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ywwoy"]
 shader = ExtResource("1_30b7x")
-shader_parameter/colour_processing = 0
-shader_parameter/colour_sp0 = ExtResource("2_6ywgl")
-shader_parameter/colour_sp1 = ExtResource("3_17bkb")
-shader_parameter/colour_sp2 = ExtResource("4_xpuje")
+shader_parameter/colour_fx = null
+shader_parameter/species0 = ExtResource("2_6ywgl")
+shader_parameter/species1 = ExtResource("4_xpuje")
+shader_parameter/species2 = ExtResource("3_17bkb")
 
 [sub_resource type="Resource" id="Resource_74s04"]
 script = ExtResource("2_xvc6a")
