@@ -1,0 +1,39 @@
+[gd_scene load_steps=9 format=3 uid="uid://co17m8ly5ry6c"]
+
+[ext_resource type="Shader" path="res://shaders/Colours.gdshader" id="1_30b7x"]
+[ext_resource type="Script" path="res://scripts/Slime.gd" id="1_sf58l"]
+[ext_resource type="Texture2D" uid="uid://cxk2r64k2anxp" path="res://shaders/blue.tres" id="2_6ywgl"]
+[ext_resource type="Script" path="res://scripts/Settings.gd" id="2_xvc6a"]
+[ext_resource type="Texture2D" uid="uid://ci7svgelnir2x" path="res://shaders/pink.tres" id="3_17bkb"]
+[ext_resource type="Texture2D" uid="uid://csb8o3gmskxjq" path="res://shaders/yellow.tres" id="4_xpuje"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ywwoy"]
+shader = ExtResource("1_30b7x")
+shader_parameter/colour_processing = 0
+shader_parameter/colour_sp0 = ExtResource("2_6ywgl")
+shader_parameter/colour_sp1 = ExtResource("3_17bkb")
+shader_parameter/colour_sp2 = ExtResource("4_xpuje")
+
+[sub_resource type="Resource" id="Resource_74s04"]
+script = ExtResource("2_xvc6a")
+num_agents = 100000
+num_species = 2
+spawn_radius = 100
+spawn_direction = 1
+boundary_type = 2
+move_speed = 10.0
+turn_speed = 15.0
+sensor_radius = 1
+sensor_distance = 10.0
+sensor_angle_radians = 1.0472
+trail_weight = 1.0
+diffusion_radius = 1
+diffusion_force = 3.0
+evaporation = 0.8
+
+[node name="Slime simulation" type="TextureRect"]
+material = SubResource("ShaderMaterial_ywwoy")
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_sf58l")
+settings = SubResource("Resource_74s04")

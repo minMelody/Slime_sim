@@ -1,14 +1,14 @@
 class_name SlimeSettings extends Resource
 
 @export_group("Simulation setup")
-@export var num_agents := 1000
-@export_range(1, 3) var num_species := 1
-@export var spawn_radius := 50
-@export_enum("Outwards", "Inwards") var spawn_direction := 0
-@export_enum("Wrap", "Clamp", "Circle") var boundary_type := 0
+@export var num_agents := 100000
+@export_range(1, 3) var num_species := 2
+@export var spawn_radius := 100
+@export_enum("Outwards", "Inwards") var spawn_direction := 1
+@export_enum("Wrap", "Clamp", "Circle") var boundary_type := 2
 @export_group("Agents behavior")
-@export var move_speed := 5.0
-@export var turn_speed := 10.0
+@export var move_speed := 10.0
+@export var turn_speed := 15.0
 @export var sensor_radius := 1
 @export var sensor_distance := 10.0
 @export var sensor_angle_radians := 1.0472
